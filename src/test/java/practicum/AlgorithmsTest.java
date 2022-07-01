@@ -132,16 +132,16 @@ public class AlgorithmsTest {
     public void reverseWordsInSentenceTest() {
         assertEquals("араж", Algorithms.reverseWordsInSentence("жара"));
         assertEquals("лыб цясем йам", Algorithms.reverseWordsInSentence("был месяц май"));
-        assertEquals(" ", Algorithms.reverseWordsInSentence(" "));
-        assertEquals("", Algorithms.reverseWordsInSentence(""));
-        assertEquals("йоМ ядяд хымас хынтсеч ливарп...", Algorithms.reverseWordsInSentence("Мой дядя самых честных правил..."));
+      assertEquals(" ", Algorithms.reverseWordsInSentence(" "));
+       assertEquals("", Algorithms.reverseWordsInSentence(""));
+       assertEquals("йоМ ядяд хымас хынтсеч ливарп...", Algorithms.reverseWordsInSentence("Мой дядя самых честных правил..."));
         assertEquals("дА - раж, аджарв!", Algorithms.reverseWordsInSentence("Ад - жар, вражда!"));
     }
 
 
     @Test
     public void sortSymbolsTest() {
-        assertArrayEquals(new char[]{'a', 'b', 'c', 'd'}, Algorithms.sortSymbols(new char[]{'c', 'a', 'b', 'd'}));
+       assertArrayEquals(new char[]{'a', 'b', 'c', 'd'}, Algorithms.sortSymbols(new char[]{'c', 'a', 'b', 'd'}));
         assertArrayEquals(new char[]{'a'}, Algorithms.sortSymbols(new char[]{'a'}));
         assertArrayEquals(new char[]{'a', 'a','a', 'a'}, Algorithms.sortSymbols(new char[]{'a', 'a','a', 'a'}));
         assertArrayEquals(new char[]{'a', 'b', 'c', 'd', 'а', 'б', 'в', 'г', 'у'}, Algorithms.sortSymbols(new char[]{'г','а','в','у','б','c', 'a', 'b', 'd'}));
@@ -164,8 +164,8 @@ public class AlgorithmsTest {
 
     @Test
     public void hasUniqueCharsTest() {
-        assertTrue(Algorithms.hasUniqueChars(""));
-        assertTrue(Algorithms.hasUniqueChars("t"));
+       assertTrue(Algorithms.hasUniqueChars(""));
+       assertTrue(Algorithms.hasUniqueChars("t"));
         assertFalse(Algorithms.hasUniqueChars("tt"));
         assertFalse(Algorithms.hasUniqueChars("я"));
         assertFalse(Algorithms.hasUniqueChars("tя"));
